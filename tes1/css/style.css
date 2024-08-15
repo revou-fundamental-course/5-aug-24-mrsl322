@@ -1,0 +1,149 @@
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+header {
+    text-align: center;
+    padding: 1rem;
+    color: #000000;
+    font-size: 1.5rem;
+}
+
+header h2 {
+    margin: 0;
+}
+
+/* main layout */
+main { 
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+/* container */
+div.container {
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(201, 191, 191);
+    border: 2px solid #c41818;
+    text-align: center;
+    padding: 2px;
+}
+
+.container h3 {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+/* form element */
+#gender, 
+input[type="number"] {
+    text-align: center;
+    width: 75%;
+    padding: 1vh;
+    margin-bottom: 1vh;
+    border: 1px solid #c41818;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* label */
+label {
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+form h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* buttons */
+#calculate,
+#reset {
+    width: 48%;
+    padding: 2vh;
+    border-radius: 7.5px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.button-calculate {
+    background-color: #8b8b8b;
+    color: white;
+}
+
+.button-calculate:hover {
+    background-color: rgb(158, 143, 143);
+}
+
+.button-reset {
+    background-color: #e74c3c;
+}
+
+.button-reset:hover {
+    background-color: red;
+}
+
+/* table */
+table {
+    width: 100vh;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+th,
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 2vh;
+}
+
+tr {
+    height: 5vh;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/* section */
+section > p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+ul li,
+p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* aside */
+aside {
+    padding-left: 0;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    color: #000000;
+}
+
+footer p {
+    font-size: 0.75rem;
+}
