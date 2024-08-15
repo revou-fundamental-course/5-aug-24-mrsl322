@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+    <header>
+        <h1>Kalkulator Berat Badan BMI</h1>
+    </header>
+
+    <main>
+        <aside>
+			
+            <article>
+                <p>Masukkan data Anda.</p> 
+            </article>
+
+            <div class="container">
+                <form id="bmi-form">
+                    <h2>Body Mass Index Calculator</h2>
+                    <label for="gender">Gender:</label>
+                    <select id="gender">
+                        <option value="pria">Pria</option>
+                        <option value="wanita">Wanita</option>
+                    </select>
+                    <br /><br />
+                    <label for="weight">Body Weight (kg):</label> <!-- Capitalized the words -->
+                    <input type="number" id="weight" placeholder="Masukkan berat badan" required />
+                    <br /><br />
+                    <label for="height">Body Height (cm):</label> <!-- Capitalized the words -->
+                    <input type="number" id="height" step="1" placeholder="Masukkan tinggi" required />
+                    <br /><br />
+                    <div>
+                        <button onclick="calculateBMI()" type="button" id="calculate" class="button-calculate">Calculate</button>
+                        <button onclick="resetForm()" type="button" id="reset" class="button-reset">Reset</button> <!-- Capitalized "resetForm()" and corrected "onclick" function name -->
+                    </div>
+                    <h3 id="result"></h3>
+                </form>
+            </div>
+ <!-- Tabel Informasi -->
+            <article>
+                <header>
+                    <h2>Kriteria Hasil</h2>
+                </header>
+                <table class="table">
+                    <tr>
+                        <th>BMI</th>
+                        <th>Deskripsi</th>
+                    </tr>
+                    <tr>
+                        <td>Kurang dari 16.8</td>
+                        <td>Kurang Gizi</td> 
+                    </tr>
+                    <tr>
+                        <td>16.8-18.4</td>
+                        <td>Kurus</td>
+                    </tr>
+                    <tr>
+                        <td>18.5-24.9</td>
+                        <td>Normal</td>
+                    </tr>
+                    <tr>
+                        <td>25-29.9</td>
+                        <td>Gemuk</td>
+                    </tr>
+                </table>
+            </article>
+        </aside>
+ <!-- Penjelasan Kriteria -->
+        <aside>
+            <section>
+                <p>Indeks Massa Tubuh alias Body Mass Index (BMI) merupakan salah satu cara 
+					menghitung berat badan ideal yang paling populer. Dengan metode ini, 
+					perhitungan berat badan ideal dilakukan berdasarkan berat 
+					dan tinggi badan. Dengan mengetahui BMI,	
+					kamu bisa mengetahui apakah berat badan saat ini masuk dalam kategori ideal atau normal,
+					berlebih, atau justru kurang. Meski begitu,
+					penghitungan BMI juga tidak selalu akurat, 
+					sehingga tidak perlu terlalu bergantung pada hasilnya.</p> 
+                <ul>
+                    
+<ul>
+    <p>Rumus BMI metrik adalah sebagai berikut<p>
+    
+    
+    <li>[berat badan (kg) : (tinggi badan (m)) kuadrat] atau </li>
+    
+    <li>[berat badan (kg) : {tinggi badan (m) x tinggi badan (m))]</li>
+    
+     
+    
+    <p>Misalnya, jika berat badan Anda 60 kg dan tinggi badan Anda 150 cm (1,5 m), maka di bawah ini adalah perhitungan BMI:</p>
+    
+     
+    
+    <li>IMT = 60 : (1,5 x 1,5) = 60 : 2,25 = 26,6</li>
+    
+     
+    
+    <p>Jadi BMI seseorang yang berat badannya 60 kg dan tinggi badannya 150 cm adalah 26,6.<p>
+    
+     
+</ul>
+    <p>Kategori BMI</p>
+     
+    Menurut WHO, kategori standar berat badan ideal pria dan wanita berdasarkan BMI adalah:
+    
+    <li>Kurang dari 18,5 menandakan kekurangan berat badan.</li>
+    
+    <li>Antara 18,5 dan 24,9 menandakan berat badan normal</li>.
+    
+    <li>Antara 25 dan 29,9 menandakan kelebihan berat badan.</li>
+    
+    <li>Di atas 30 menandakan obesitas.</li>
+    
+     </ul>
+     
+     <h3>Bisakah BMI Menjadi Tolak Ukur Berat Badan Ideal?</h3>
+      apakah perhitungan BMI bisa menjadi tolak ukur yang efektif untuk menentukan berat badan seseorang ideal? 
+      BMI dapat membantu Anda memastikan berat badan ideal. Namun, metode ini tidak terlalu akurat karena hanya melibatkan berat dan tinggi badan seseorang tanpa memperhitungkan usia, massa otot, jenis kelamin, dan lemak tubuh. 
+      Oleh karena itu, perhitungan Indeks Massa Tubuh tidak akan efektif jika diterapkan pada ibu hamil atau atlet. <p/>
+            </section>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Made by Orang</p> <!-- Capitalized "Made" -->
+    </footer>
+
+    <script src="js/script.js"></script> <!-- JS linking -->
+</body>
+
+</html>
